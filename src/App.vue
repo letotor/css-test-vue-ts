@@ -15,6 +15,11 @@
                 class="item-container"
                 :key="datas[0].id"
             />
+            <!-- <Item
+                :item="datas[0]"
+                class="item-container"
+                :key="datas[0].id + 1"
+            /> -->
         </div>
     </div>
 </template>
@@ -75,6 +80,19 @@ const toggle = () => {
     align-items: start;
     justify-content: start;
     border: 1px solid green;
+    &&::-webkit-scrollbar {
+        width: 12px; /* Largeur de la barre de défilement */
+    }
+
+    &&::-webkit-scrollbar-thumb {
+        background-color: blue; /* Couleur de la barre de défilement */
+        border-radius: 10px;
+        border: 2px solid rgba(0, 0, 255, 0.601);
+    }
+
+    &&::-webkit-scrollbar-track {
+        background-color: grey; /* Couleur du fond de la barre de défilement */
+    }
 }
 .button {
     margin: 20px;
