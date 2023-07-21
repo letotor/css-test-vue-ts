@@ -22,7 +22,7 @@ defineProps<{
     flex-direction: column;
     height: auto;
     max-height: 200px;
-    width: 150px;
+
     flex-wrap: wrap;
     align-items: center;
 
